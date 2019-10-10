@@ -9,3 +9,7 @@
 ### Estilos Globais com Styled Components
 
 `yarn add styled-components`
+
+### Ícones da aplicação:
+
+`yarn add react-icons`
