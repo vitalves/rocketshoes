@@ -5,3 +5,7 @@
 ### Configurando as rotas:
 
 `yarn add react-router-dom`
+
+### Estilos Globais com Styled Components
+
+`yarn add styled-components`
