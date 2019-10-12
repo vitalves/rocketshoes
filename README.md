@@ -63,4 +63,6 @@ return (
     </Provider>
   );
 ```
+### Configurando o Reactotron:
 
+`yarn add reactotron-react-js reactotron-redux`
