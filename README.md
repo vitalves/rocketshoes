@@ -13,3 +13,7 @@
 ### Ícones da aplicação:
 
 `yarn add react-icons`
+
+### Trabalhando com ajustes de cores:
+
+`yarn add polished`
