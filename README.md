@@ -42,3 +42,7 @@ definições:
 ### Trabalhando com APIs
 
 `yarn add axios`
+
+## Configurando o Redux##
+
+`yarn add redux react-redux`
