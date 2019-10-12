@@ -46,3 +46,21 @@ definições:
 ## Configurando o Redux##
 
 `yarn add redux react-redux`
+
+- cria o diretorio _store_ e o arquivo _index.js_ dentro para o 'createStore;
+- importa **Provider** de **'react-redux'** no arquivo _App.js_;
+- importa **store** de para dentro do _App.js_ para usar como parâmentro;
+- Envolve TODOS os componentes contido no _return_ dentro do _Provider_;
+
+```js
+return (
+    <Provider store={store}>
+      <BrowserRouter>
+        <Header />
+        <Routes />
+        <GlobalStyle />
+      </BrowserRouter>
+    </Provider>
+  );
+```
+
