@@ -22,51 +22,41 @@ function Cart({ cart }) {
           </tr>
         </thead>
         <tbody>
-          {cart.length > 0 ? (
-            cart.map(product => (
-              <tr>
-                <td>
-                  <img src={product.image} alt={product.title} />
-                </td>
-                <td>
-                  <strong>{product.title}</strong>
-                  <span> {product.priceFormatted} </span>
-                </td>
-                <td>
-                  <div>
-                    <button type="button">
-                      <MdRemoveCircleOutline size={20} color="#7159c1" />
-                    </button>
-                    <input
-                      type="number"
-                      id="quantidade"
-                      value={product.amount}
-                      readOnly
-                    />
-                    <button type="button">
-                      <MdAddCircleOutline size={20} color="#7159c1" />
-                    </button>
-                  </div>
-                </td>
-                <td>
-                  <strong> R$ 258,80 </strong>
-                </td>
-                <td>
+          {cart.map(product => (
+            <tr key={product.id}>
+              <td>
+                <img src={product.image} alt={product.title} />
+              </td>
+              <td>
+                <strong>{product.title}</strong>
+                <span> {product.priceFormatted} </span>
+              </td>
+              <td>
+                <div>
                   <button type="button">
-                    <MdDelete size={20} color="#7159c1" />
+                    <MdRemoveCircleOutline size={20} color="#7159c1" />
                   </button>
-                </td>
-              </tr>
-            ))
-          ) : (
-            <div>
-              <h1>
-                <i>Ops!</i>
-                <br />
-                Seu carrinho está vazio!
-              </h1>
-            </div>
-          )}
+                  <input
+                    type="number"
+                    id="quantidade"
+                    value={product.amount}
+                    readOnly
+                  />
+                  <button type="button">
+                    <MdAddCircleOutline size={20} color="#7159c1" />
+                  </button>
+                </div>
+              </td>
+              <td>
+                <strong> R$ 258,80 </strong>
+              </td>
+              <td>
+                <button type="button">
+                  <MdDelete size={20} color="#7159c1" />
+                </button>
+              </td>
+            </tr>
+          ))}
         </tbody>
       </ProductTable>
       <footer>
