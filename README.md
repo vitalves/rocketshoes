@@ -66,3 +66,8 @@ return (
 ### Configurando o Reactotron:
 
 `yarn add reactotron-react-js reactotron-redux`
+
+### Trabalhando com o IMMER para um melhor gerenciamento de estados
+
+`yarn add immer`
+
