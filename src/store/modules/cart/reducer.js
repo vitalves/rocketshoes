@@ -4,7 +4,7 @@ import produce from 'immer';
 export default function cart(state = [], action) {
   // console.log(state);
   switch (action.type) {
-    case 'ADD_TO_CART':
+    case '@cart/ADD':
       // return [...state, action.product];
       /* SEM O IMMER:
       return [
@@ -30,7 +30,7 @@ export default function cart(state = [], action) {
         }
         // draft.push(action.product);
       });
-    case 'REMOVE_FROM_CART':
+    case '@cart/REMOVE':
       return produce(state, draft => {
         const productIndex = draft.findIndex(p => p.id === action.id);
 
