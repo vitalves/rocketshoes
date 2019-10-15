@@ -16,7 +16,7 @@ export default function cart(state = [], action) {
       ]; */
       /* COM O IMMER:
       return produce(state, draft =>{})
-    */
+      */
       return produce(state, draft => {
         // todas as alterações feitas aqui refletirão no estado
         const productIndex = draft.findIndex(p => p.id === action.product.id);
@@ -29,6 +29,14 @@ export default function cart(state = [], action) {
           });
         }
         // draft.push(action.product);
+      });
+    case 'REMOVE_FROM_CART':
+      return produce(state, draft => {
+        const productIndex = draft.findIndex(p => p.id === action.id);
+
+        if (productIndex >= 0) {
+          draft.splice(productIndex, 1);
+        }
       });
 
     default:
