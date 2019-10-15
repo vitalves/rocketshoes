@@ -70,6 +70,10 @@ export const ProductTable = styled.table`
       padding: 6px;
       width: 50px;
     }
+    input[type='number'] {
+      -moz-appearance: textfield; /* Firefox */
+      margin: 0;
+    }
   }
 
   button {
