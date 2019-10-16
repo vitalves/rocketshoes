@@ -4,7 +4,7 @@ import produce from 'immer';
 export default function cart(state = [], action) {
   // console.log(state);
   switch (action.type) {
-    case '@cart/ADD':
+    case '@cart/ADD_SUCCESS':
       // return [...state, action.product];
       /* SEM O IMMER:
       return [

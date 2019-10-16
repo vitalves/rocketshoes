@@ -71,3 +71,9 @@ return (
 
 `yarn add immer`
 
+## Redux Saga
+
+Midleware com o Redux intecepta as actions e faz busca no banco de dados (API)
+
+`yarn add redux-saga`
+
