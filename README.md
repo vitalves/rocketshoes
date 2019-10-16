@@ -77,3 +77,8 @@ Midleware com o Redux intecepta as actions e faz busca no banco de dados (API)
 
 `yarn add redux-saga`
 
+### Reactotron + Saga
+
+Plugin para obter mais informações sobre o fluxo das informações.
+
+`yarn add reactotron-redux-saga`
