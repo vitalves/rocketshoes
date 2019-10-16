@@ -19,6 +19,7 @@ export default function cart(state = [], action) {
       */
       return produce(state, draft => {
         // todas as alterações feitas aqui refletirão no estado
+        /* antes do Saga consultar o estoque:
         const productIndex = draft.findIndex(p => p.id === action.product.id);
         if (productIndex >= 0) {
           draft[productIndex].amount += 1;
@@ -27,8 +28,12 @@ export default function cart(state = [], action) {
             ...action.product,
             amount: 1,
           });
-        }
+        } */
         // draft.push(action.product);
+
+        // com o Saga:
+        const { product } = action;
+        draft.push(product);
       });
 
     case '@cart/REMOVE':
