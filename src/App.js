@@ -2,6 +2,8 @@ import React from 'react';
 import { BrowserRouter } from 'react-router-dom';
 /* redux */
 import { Provider } from 'react-redux';
+// notificacoes:
+import { ToastContainer } from 'react-toastify';
 /* Reactotron */
 import './config/ReactotronConfig';
 
@@ -18,6 +20,17 @@ function App() {
         <Header />
         <Routes />
         <GlobalStyle />
+        <ToastContainer
+          position="top-center"
+          autoClose={5000}
+          hideProgressBar={false}
+          newestOnTop
+          closeOnClick
+          rtl={false}
+          pauseOnVisibilityChange
+          draggable
+          pauseOnHover
+        />
       </BrowserRouter>
     </Provider>
   );

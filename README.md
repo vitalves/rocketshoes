@@ -82,3 +82,8 @@ Midleware com o Redux intecepta as actions e faz busca no banco de dados (API)
 Plugin para obter mais informações sobre o fluxo das informações.
 
 `yarn add reactotron-redux-saga`
+
+## Notificações com React Toastify
+
+`yarn add react-toastify`
+
