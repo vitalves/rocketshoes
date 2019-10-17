@@ -45,10 +45,11 @@ export default function cart(state = [], action) {
         }
       });
 
-    case '@cart/UPDATE_AMOUNT': {
+    case '@cart/UPDATE_AMOUNT_SUCCESS': {
+      /* essa verificacao passou a ser feita pelo SAGA
       if (action.amount <= 0) {
         return state;
-      }
+      } */
 
       return produce(state, draft => {
         const productIndex = draft.findIndex(p => p.id === action.id);
