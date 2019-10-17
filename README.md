@@ -87,3 +87,6 @@ Plugin para obter mais informações sobre o fluxo das informações.
 
 `yarn add react-toastify`
 
+## Navegando no Saga
+
+`yarn add history`

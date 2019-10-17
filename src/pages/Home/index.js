@@ -39,6 +39,10 @@ class Home extends Component {
     const { addToCartRequest } = this.props;
 
     addToCartRequest(id);
+
+    /* o redirecionamento aqui poderia ocorrer antes de funçao acima.
+    por isso foi feita no Saga (usando a bibliote history) */
+    // this.props.history.push('/cart');
   };
 
   render() {
