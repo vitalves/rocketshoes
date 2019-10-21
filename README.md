@@ -90,3 +90,11 @@ Plugin para obter mais informações sobre o fluxo das informações.
 ## Navegando no Saga
 
 `yarn add history`
+
+## Utilizando React Hooks
+
+### Convertendo classes para Funções
+
+`yarn add eslint-plugin-react-hooks -D`
+
+_Em seguida insere as configurações no arquivo .eslintrc.js_
