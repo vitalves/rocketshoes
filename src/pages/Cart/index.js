@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 // import { connect } from 'react-redux';
 import { useDispatch, useSelector } from 'react-redux';
 // import { bindActionCreators } from 'redux';
@@ -16,6 +16,10 @@ import { Container, ProductTable, Total } from './styles';
 
 // function Cart({ cart, total, removeFromCart, updateAmountRequest }) {
 export default function Cart() {
+  useEffect(() => {
+    document.title = 'Meu Carinho';
+  }, []);
+
   const total = useSelector(state =>
     formatPrice(
       state.cart.reduce((totalSum, product) => {
